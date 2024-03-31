@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <h1>19-2 While Loop, Debug And Understand While Loop</h1>
+    <h2>While Loop</h2>
+    <p>A while loop is used to repeat a specific blok of code until a condition is met. A real life example would be serving rice at a wedding repeatedly.</p>
+
+    <h2>Structure of While Loop</h2>
+    <h5>while(condition)</h5>
+    <h5>{</h5>
+    <h5>//body of loop</h5>
+    <h5>}</h5> 
+    
+    <h5>while(condition): First condition is tested and if its true then body of the loop is executed.</h5>
+    <h5>//body of loop: A pair of parenthesis is a must if there is more than one statement in the body of while loop.</h5>
+
+    <h2>Why do we need while loop?</h2>
+    <p>Suppose we want to print a message 5 times.</p>
+    <h5>console.log('Hello');</h5>
+    <h5>console.log('Hello');</h5>
+    <h5>console.log('Hello');</h5>
+    <h5>console.log('Hello');</h5>
+    <h5>console.log('Hello');</h5>
+
+    <h3>This is the way to do it</h3>
+    <h5>var num = 0;</h5>
+    <h5>while(num < 5){</h5>
+    <h5>&nbsp;&nbsp;console.log('Hello');</h5>
+    <h5>&nbsp;&nbsp;num = num + 1;</h5>
+    <h5>}</h5> 
+    
+    <h2>How does while loop work?</h2>
+    <h3>&nbsp;&nbsp;Code -------------------------- Status ----------------------------- Output</h3>
+    <h5>var num = 0; -------------------------------- num = 4 -------------------------------------- Hello</h5>
+    <h5>while(num < 5){ ----------------------------- num < 5 -------------------------------------- Hello</h5>
+    <h5>&nbsp;&nbsp;console.log('Hello'); ------------- True ----------------------------------------- Hello</h5>
+    <h5>&nbsp;&nbsp;num = num +1; ---------------------- ---------------------------------------------Hello</h5>
+    <h5>}</h5>
+    <h3>* If</h3>
+    <h5>num = 5</h5>
+    <h5>num < 5</h5>
+    <h5>False</h5>
+    <h5>Since condition evaluates to False, thus loop is terminated.</h5> 
+    
+    <h2>Infinite Loop</h2>
+    <h3>&nbsp;&nbsp;Code ------------------------ Status --------------------------------- Output</h3>
+    <h5>var num = 0; ------------------------------ num = 0 ----------------------------------- Hello</h5>
+    <h5>while(num < 5){ --------------------------- num < 5 ----------------------------------- Hello</h5>
+    <h5>&nbsp;&nbsp;console.log('Hello'); -------------- True ---------------------------------- Hello</h5>
+    <h5>} ---------------------------------------------- --------------------------------------- Hello</h5>  
+    <h5>*Infinite Loop* ---------------------------------- --------------------------------------- Hello</h5>
+    <h5>------------------------------------------------ --------------------------------------- Hello</h5>
+    <h5>------------------------------------------------ --------------------------------------- Hello</h5>
+    <h5>------------------------------------------------ --------------------------------------- Hello</h5>
+
+    <br>
+//* --------------------------------------------------------------------------------------------------------------------- *//
+<h5>// roastGiven = roastGiven = 1;</h5>
+<h5>// roastGiven += 1;</h5>
+
+<br>
+<h5>roastGiven = 0;</h5>
+<h5>while(roastGiven < 7){</h5>
+    <h5>&nbsp;&nbsp;console.log('Give The Roast, Please !!' )</h5>
+    <h5>&nbsp;&nbsp;console.log(roastGiven);</h5>
+    <h5>&nbsp;&nbsp;roastGiven++;</h5>
+<h5>}</h5>
+
+<h5>// Output:Give The Roast, Please !!</h5>
+<h5>// 0</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 1</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 2</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 3</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 4</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 5</h5>
+<h5>// Give The Roast, Please !!</h5>
+<h5>// 6</h5>
+
+
+
+</body>
+</html>
