@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How For Loop Works</title>
+</head>
+<body>
+    <h1>For Loop, How For Loop Works, While Vs For Loop</h1>
+    <h2>For Loop</h2>
+    <p>For Loop iterates through a block of code a number of times</p>
+    <h5>for(expression 1; expression 2; expression 3)</h5>
+    <h5>{</h5>
+        <h5>&nbsp;&nbsp; statement 1;</h5>
+        <h5>&nbsp;&nbsp; statement 2;</h5>
+    <h5>}</h5>
+
+    <h5>1. variable declaration (expression 1;)</h5>
+    <h5>2. loop condition (expression 2;)</h5>
+    <h5>3. code (statement 1; and statement 2;)</h5>
+    <h5>4. increment/decrement (expression 3)</h5>
+
+    <h2>For Loop</h2>
+    <p>Suppose you want print a massage using for loop</p>
+    <h5>for(var i = 0; i < 5; i++){</h5>
+        <h5>&nbsp;&nbsp; console.log('Hello');</h5>
+    <h5>}</h5>
+
+    <h5>Output:</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+
+    <h2>How does for loop work?</h2>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Code ------------------------------------------ Status ----------------------------- Output</h5>
+    <h5>for(var i = 0; i < 5; i++){  --------------------                       i = 4  ----------------------------- Hello</h5>
+        <h5>&nbsp;&nbsp; console.log('Hello'); ---------------------------      i < 5  ----------------------------- Hello</h5>
+    <h5>}                    -------------------------------------------------- True   ----------------------------- Hello</h5>
+    <h5>                   ----------------------------------------------------------------------------------------- Hello</h5>
+    <h5>                   ----------------------------------------------------------------------------------------- Hello</h5>
+    <h5>                   -------------------------------------------------- and when -----------------------------</h5>
+    <h5>                   -------------------------------------------------- i = 5 --------------------------------</h5>
+    <h5>                   -------------------------------------------------- i < 5 --------------------------------</h5>
+    <h5>                   --------------------------------------------------- False --------------------------------</h5>
+    <h5>                   --------------------------------------------- its becomes False --------------------------</h5>
+    <p>Since condition evaluates to False, thus loop is terminated.</p>
+
+    <h2>While Loop</h2>
+
+    <h5>var num = 0;</h5>
+    <h5>while(num < 5){</h5>
+        <h5>&nbsp;&nbsp; console.log('Hello');</h5>
+        <h5>&nbsp;&nbsp; num = num + 1;</h5>
+    <h5>}</h5>
+
+    <h3>* variable declaration (var num = 0;)</h3>
+    <h3>* loop condition (num < 5)</h3>
+    <h3>* code (console.log('Hello');)</h3>
+    <h3>* increment (num = num + 1;)</h3>
+
+    <h5>Output:</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+
+    <h2>For Loop</h2>
+
+    <h5>(var i = 0; i < 5; i++){</h5>
+        <h5>&nbsp;&nbsp; console.log('Hello');</h5>
+    <h5>}</h5>
+
+    <h3>* variable declaration (var i = 0;)</h3>
+    <h3>* loop condition (i < 5;)</h3>
+    <h3>* code (console.log('Hello');)</h3>
+    <h3>* increment (i++;)</h3>
+
+    <h5>Output:</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+    <h5>Hello</h5>
+
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h5>/* var roastGiven = 0;</h5>
+<h5>while(roastGiven < 7){</h5>
+    <h5>&nbsp;&nbsp; console.log('Give the Roast please !!');</h5>
+    <h5>&nbsp;&nbsp; roastGiven++;</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !! */</h5>
+
+<h5>/* For Loop */</h5>
+<h5>/* for(var roastGiven = 0; roastGiven < 7; roastGiven++){</h5>
+    <h5>&nbsp;&nbsp; console.log('Give the Roast please !!');</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !!</h5>
+<h5>Give the Roast please !! */</h5>
+
+<h5>/* Simple Version of For Loop */</h5>
+<h5>/* for(var i = 0; i < 7; i++){</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>0</h5>
+<h5>1</h5>
+<h5>2</h5>
+<h5>3</h5>
+<h5>4</h5>
+<h5>5</h5>
+<h5>6 */</h5>
+
+<h5>/* &nbsp;&nbsp; console.log('Simple For Loop');</h5>
+<h5>for(var i = 0; i < 7; i++){</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output: Debug console</h5>
+<h5>Simple For Loop</h5>
+<h5>0</h5>
+<h5>1</h5>
+<h5>2</h5>
+<h5>3</h5>
+<h5>4</h5>
+<h5>5</h5>
+<h5>6 */</h5>
+
+<h5>/* for(var i = 0; i < 10; i++){</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>0</h5>
+<h5>1</h5>
+<h5>2</h5>
+<h5>3</h5>
+<h5>4</h5>
+<h5>5</h5>
+<h5>6</h5>
+<h5>7</h5>
+<h5>8</h5>
+<h5>9 */</h5>
+
+<h5>/* for(var i = 1; i < 10; i++){</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>1</h5>
+<h5>2</h5>
+<h5>3</h5>
+<h5>4</h5>
+<h5>5</h5>
+<h5>6</h5>
+<h5>7</h5>
+<h5>8</h5>
+<h5>9 */</h5>
+
+<h5>/* for (var i = 1; i <= 10; i++) {</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>1</h5>
+<h5>2</h5>
+<h5>3</h5>
+<h5>4</h5>
+<h5>5</h5>
+<h5>6</h5>
+<h5>7</h5>
+<h5>8</h5>
+<h5>9</h5>
+<h5>10 */</h5>
+
+
+<h4>// i = i + 2;</h4>
+<h4>// Shorthand i += 2;</h4>
+
+<h5>/* for (var i = 0; i <= 20; i+=2) {</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>} */</h5>
+<h5>/* Output:</h5>
+<h5>0</h5>
+<h5>2</h5>
+<h5>4</h5>
+<h5>6</h5>
+<h5>8</h5>
+<h5>10</h5>
+<h5>12</h5>
+<h5>14</h5>
+<h5>16</h5>
+<h5>18</h5>
+<h5>20 */</h5>
+
+<h5>for (var i = 1; i <= 20; i+=2) {</h5>
+    <h5>&nbsp;&nbsp; console.log(i);</h5>
+<h5>}</h5>
+<h5>/* Output:</h5>
+<h5>1</h5>
+<h5>3</h5>
+<h5>5</h5>
+<h5>7</h5>
+<h5>9</h5>
+<h5>11</h5>
+<h5>13</h5>
+<h5>15</h5>
+<h5>17</h5>
+<h5>19 */</h5>
+   
+</body>
+</html>
