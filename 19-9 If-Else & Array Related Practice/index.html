@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else And Array</title>
+</head>
+<body>
+    <h1>If-Else And Array Related Practice Problems</h1>
+    
+    <h2>/*                                          Practice Problem 1</h2>
+
+    <h3>You are given an array:</h3>
+    <h3>var fruits = ['Apple', 'Banana', 'Orange'];</h3>
+    <h3>a) Find the index of 'Banana' and replace 'Banana' with 'Mango'.</h3>
+    <h3>b) Remove 'Orange' and add 'Watermelon'.</h3> 
+    <h3>*/</h3>
+
+    <br>
+    <h5>var fruits = ['Apple', 'Banana', 'Orange'];</h5>
+    <h5>var bananaIndex = fruits.indexOf('Banana');</h5>
+    <h5>console.log(bananaIndex);</h5>
+    <h5>/* Output:</h5>
+    <h5>1 */</h5>
+
+    <br>
+    <h5>var fruits = ['Apple', 'Banana', 'Orange'];</h5>
+    <h5>var bananaIndex = fruits.indexOf('Banana');</h5>
+    <h5>fruits[1] = 'Mango'</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'Apple', 'Mango', 'Orange' ] */</h5>
+
+
+    <br>
+    <h5>var fruits = ['Apple', 'Banana', 'Orange'];</h5>
+    <h5>var bananaIndex = fruits.indexOf('Banana');</h5>
+    <h5>fruits[bananaIndex] = 'Mango'</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'Apple', 'Mango', 'Orange' ] */</h5>
+
+    <br>
+    <h5>var fruits = ['Apple', 'Banana', 'Orange'];</h5>
+    <h5>var bananaIndex = fruits.indexOf('Banana');</h5>
+    <h5>fruits[bananaIndex] = 'Mango'</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>fruits.pop();</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'Apple', 'Mango', 'Orange' ]</h5>
+    <h5>[ 'Apple', 'Mango' ] */</h5>
+
+
+    <br>
+    <h5>var fruits = ['Apple', 'Banana', 'Orange'];</h5>
+    <h5>var bananaIndex = fruits.indexOf('Banana');</h5>
+    <h5>fruits[bananaIndex] = 'Mango'</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>fruits.pop();</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>fruits.push('Watermelon');</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'Apple', 'Mango', 'Orange' ]</h5>
+    <h5>[ 'Apple', 'Mango' ]</h5>
+    <h5>[ 'Apple', 'Mango', 'Watermelon' ] */</h5>
+
+
+    */ -----------------------------------------------------------------------------------*/
+
+    <h2>/*                                              Practice Problem 2 </h2>
+
+
+    <h3>You and your friends Tom, Jane, Peter and John got their final exam results. Your total score is 85, Tom's total score is 66, Jane's total score is 95, Peter's total score 56 and John's total score is 40. The grading chart is</h3>
+    <h3>80 or above A grade</h3>
+    <h3>60 or above B grade</h3>
+    <h3>50 or above C grade</h3>
+    <h3>40 or above d grade</h3>
+    <h3>39 or less => F grade</h3>
+    <h3>Write a program to find your and your friends grades using if-else.</h3> 
+    <h3>*/</h3>
+
+    <br>
+    <h5>var totalScoreMyself = 85;</h5>
+    <h5>var totalScoreTom = 66;</h5>
+    <h5>var totalScoreJane = 95;</h5>
+    <h5>var totalScorePeter = 56;</h5>
+    <h5>var totalScoreJohn = 40;</h5>
+
+    <br>
+    <h3>/*                                              Calculating My Grade */</h3>
+
+    <h5>if(totalScoreMyself >= 80){</h5>
+        <h5>&nbsp;&nbsp;console.log('I have got A grade');</h5>
+    <h5>}</h5> 
+    <h5>else if (totalScoreMyself >= 60){</h5>
+        <h5>&nbsp;&nbsp;console.log('I have got B grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreMyself >= 50){</h5>
+        <h5>&nbsp;&nbsp;console.log('I have got C grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreMyself >= 40){</h5>
+        <h5>&nbsp;&nbsp;console.log('I have got D grade');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5>
+        <h5>&nbsp;&nbsp;console.log('I have got F grade');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>I have got A grade */</h5>
+
+
+    <br>
+    <h3>/*                                              Calculating Tom's grade */</h3>
+
+    <h5>if (totalScoreTom >= 80){</h5>
+        <h5>&nbsp;&nbsp;console.log('Tom has got A grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreTom >= 60){</h5>
+        <h5>&nbsp;&nbsp;console.log('Tom has got B grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreTom >= 50){</h5>
+        <h5>&nbsp;&nbsp;console.log('Tom has got C grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreTom >= 40){</h5>
+        <h5>&nbsp;&nbsp;console.log('Tom has got D grade');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5>
+        <h5>&nbsp;&nbsp;console.log('Tom has got F grade');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>Tom has got B grade */</h5>
+
+    
+    <br>
+    <h3>/*                                              Calculating Jane's grade */</h3>
+
+    <h5>if (totalScoreJane >= 80){</h5>
+        <h5>&nbsp;&nbsp;console.log('Jane has got A grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJane >= 60){</h5>
+        <h5>&nbsp;&nbsp;console.log('Jane has got B grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJane >= 50){</h5>
+        <h5>&nbsp;&nbsp;console.log('Jane has got C grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJane >= 40){</h5>
+        <h5>&nbsp;&nbsp;console.log('Jane has got D grade');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5>
+        <h5>&nbsp;&nbsp;console.log('Jane has got F grade');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>Jane has got A grade */</h5>
+
+
+    <br>
+    <h3>/*                                              Calculating Peter's grade */</h3>
+
+    <h5>if (totalScorePeter >= 80){</h5>
+        <h5>&nbsp;&nbsp;console.log('Peter has got A grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScorePeter >= 60){</h5>
+        <h5>&nbsp;&nbsp;console.log('Peter has got B grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScorePeter >= 50){</h5>
+        <h5>&nbsp;&nbsp;console.log('Peter has got C grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScorePeter >= 40){</h5>
+        <h5>&nbsp;&nbsp;console.log('Peter has got D garde');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5>
+        <h5>&nbsp;&nbsp;console.log('Peter has got F grade');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>Peter has got C grade */</h5>
+
+
+    <br>
+    <h3>/*                                              Calculating John's grade */</h3>
+
+    <h5>if (totalScoreJohn >= 80){</h5>
+        <h5>&nbsp;&nbsp;console.log('John has got A grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJohn >= 60){</h5>
+        <h5>&nbsp;&nbsp;console.log('John has got B grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJohn >= 50){</h5>
+        <h5>&nbsp;&nbsp;console.log('John has got C grade');</h5>    
+    <h5>}</h5>
+    <h5>else if (totalScoreJohn >= 40){</h5>
+        <h5>&nbsp;&nbsp;console.log('John has got D grade');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5>
+        <h5>&nbsp;&nbsp;console.log('John has got F grade');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>John has got D grade */</h5>
+
+
+    <br>
+    <h2>/*                      Practice Problem 3</h2>
+
+    <h3>You are given three numbers 13, 79, and 45. Write a program that will print the largest number using if-else. */</h3>
+
+    <br>
+    <h5>var num1 = 13;</h5>
+    <h5>var num2 = 79;</h5>
+    <h5>var num3 = 45;</h5>
+    
+    
+    <h5>if(num1 > num2){</h5>
+        <h5>&nbsp;&nbsp;if(num1 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num1);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+        <h5>&nbsp;&nbsp;else{</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+    <h5>}</h5>
+    <h5>else{</h5>
+        <h5>&nbsp;&nbsp;if(num2 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num2);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+        <h5>&nbsp;&nbsp;else{</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5>
+    <h5>79 */</h5>
+    
+
+    <br>
+    <h5>var num1 = 13;</h5>
+    <h5>var num2 = 79;</h5>
+    <h5>var num3 = 145;</h5>
+
+
+    <h5>if(num1 > num2){</h5>
+        <h5>&nbsp;&nbsp;if(num1 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num1);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+        <h5>&nbsp;&nbsp;else{</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+    <h5>}</h5>
+    <h5>else{</h5>
+        <h5>&nbsp;&nbsp;if(num2 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num2);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+        <h5>&nbsp;&nbsp;else{</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5>
+    <h5>145 */</h5>
+    
+
+    <br>
+    <h5>var num1 = 213;</h5>
+    <h5>var num2 = 79;</h5>
+    <h5>var num3 = 145;</h5>
+
+    <h5>if(num1 > num2){</h5>
+        <h5>&nbsp;&nbsp;if(num1 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num1);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>        
+        <h5>&nbsp;&nbsp;else{</h5>        
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>            
+        <h5>&nbsp;&nbsp;}</h5>            
+    <h5>}</h5>
+    <h5>else{</h5>
+        <h5>&nbsp;&nbsp;if(num2 > num3){</h5>    
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num2);</h5>        
+        <h5>&nbsp;&nbsp;}</h5>        
+        <h5>&nbsp;&nbsp;else{</h5>        
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;console.log(num3);</h5>            
+        <h5>&nbsp;&nbsp;}</h5>            
+    <h5>}</h5>
+    <h5>/* Output:</h5>
+    <h5>213 */</h5>
+
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------- */
+
+    <h2>/*                      Practice Problem 4</h2>
+    <h3>You are given a triangle with the sides 9, 8, 9. Write a program to check whether a triangle is Isosceles or not using if-else.</h3>
+    <h3>Isosceles => two sides are equal */</h3>
+    
+
+    <br>
+    <h5>var firstSideOfTriangle = 9;</h5>
+    <h5>var secondSideOfTriangle = 8;</h5>
+    <h5>var thirdSideOfTriangle = 9;</h5>
+
+    <h5>if ((firstSideOfTriangle == secondSideOfTriangle) || (firstSideOfTriangle == thirdSideOfTriangle) || (secondSideOfTriangle == thirdSideOfTriangle)) {</h5>
+        <h5>&nbsp;&nbsp;console.log('The Triangle is Isosceles');</h5>    
+    <h5>}</h5>
+    <h5>else {</h5> 
+        <h5>&nbsp;&nbsp;console.log('The Triangle is not Isosceles');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>The Triangle is Isosceles */</h5>
+
+
+    <br>
+    <h5>var firstSideOfTriangle = 9;</h5>
+    <h5>var secondSideOfTriangle = 8;</h5>
+    <h5>var thirdSideOfTriangle = 9;</h5>
+
+    <h5>if (firstSideOfTriangle == secondSideOfTriangle || firstSideOfTriangle == thirdSideOfTriangle || secondSideOfTriangle == thirdSideOfTriangle) {</h5>
+        <h5>&nbsp;&nbsp;console.log('The Triangle is Isosceles');</h5>    
+    <h5>}</h5> 
+    <h5>else {</h5> 
+        <h5>&nbsp;&nbsp;console.log('The Triangle is not Isosceles');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5> 
+    <h5>The Triangle is Isosceles */</h5>
+
+
+    <br>
+    <h5>var side1 = 9;</h5>
+    <h5>var side2 = 8;</h5>
+    <h5>var side3 = 9;</h5>
+
+    <h5>if(side1 == side2 || side1 == side3 || side2 == side3){</h5>
+        <h5>&nbsp;&nbsp;console.log('isosceles');</h5>    
+    <h5>}</h5> 
+    <h5>else{</h5>
+        <h5>&nbsp;&nbsp;console.log('not isosceles');</h5>    
+    <h5>}</h5>
+    <h5>/* Output:</h5>
+    <h5>isosceles */</h5>
+
+
+</body>
+</html>
