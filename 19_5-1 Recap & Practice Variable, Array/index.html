@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap And Practice Variable</title>
+</head>
+<body>
+    <h1>Recap And Practice Variable, Array, Conditionals</h1>
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    <h2>                            1. What is JavaScript?</h2>
+
+    <h3>JavaScript</h3>
+    <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+
+    <br>
+    <h3>JavaScript</h3>
+    <p>JavaScript is a high level, interpreted programming language used to make web pages more interactive. It let's you implement complex and beautiful things/design on web pages.</p>
+
+    <br>
+    <h3>Origin of JavaScript</h3>
+    <p>JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.</p>
+
+
+    <h3>Your Website:</h3>
+
+    <h4>HTML</h4>
+    <p>What do you want on your website?</p>
+
+    <h4>CSS</h4>
+    <p>How do you want it to look?</p>
+
+    <h4>JavaScript</h4>
+    <p>What do you it to do?</p>
+
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    <h2>                            Variable</h2>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+    <h2>                            2. How does JavaScript works?</h2> 
+
+    <h4>Definition:</h4>
+    <p>JavaScript is a programming language commonly used to add interactivity and dynamic behavior to web pages. When you visit a website, your web browser downloads the JavaScript code along with the HTML and CSS. The browser then interprets and executes the JavaScript code, allowing the website to respond to user actions, manipulate content, and communicate with servers without reloading the page. In simple terms, JavaScript makes websites more interactive and engaging by enabling them to do things like validate forms, animate elements, and update content dynamically.</p>
+
+
+    <br>
+    <h4>Explanation:</h4>
+    <p>Imagine JavaScript as a chef in a kitchen. When you visit a webpage, the browser serves as the kitchen. The HTML gives the structure (like a recipe), the CSS adds style (like decoration), and JavaScript is the chef adding flavor and making things happen.</p>
+
+    <p>JavaScript works by following instructions written in its code. These instructions can be like telling the chef what ingredients to use, how to mix them, and what to do with the final dish.</p>
+
+    <p>When you interact with a webpage (like clicking a button or typing in a form), JavaScript springs into action, responding to your actions by changing what you see on the page. It can update text, move elements around, fetch new information from the internet, and much more—all to make your web experience more interactive and enjoyable.</p>
+
+
+    <br>
+    <h4>Explanation:</h4>
+    <p>JavaScript works by running code in your web browser. When you visit a webpage, the browser downloads HTML (for structure), CSS (for style), and JavaScript (for interactivity).</p>
+
+    <p>JavaScript can do a lot of things, like:</p>
+
+    <p>1. Manipulating HTML: It can change the content and structure of a webpage. For example, updating text, adding or removing elements.</p>
+    <p>2. Interacting with users: It can respond to user actions like clicks, keystrokes, or mouse movements. For example, showing pop-ups or validating forms.</p>
+    <p>3. Communicating with servers: It can send and receive data from servers in the background. For example, fetching new information without reloading the entire page.</p>
+    <p>Overall, JavaScript makes websites dynamic and interactive, enhancing the user experience.</p>
+
+
+    <br>
+    */ ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            3. What is Variable?</h2> 
+
+    <h4>Definition:</h4>
+    <p>A variable is a container or placeholder that holds a value that can change or vary over time. It's like a box where you can store different things, and you can replace the contents of the box whenever you need to. In programming or mathematics, variables are used to store data that can be manipulated or used in calculations.</p>
+
+    <br>
+    <h4>Explanation:</h4>
+    <p>Think of a variable as a box. You can put different things in the box, like numbers or words. And, you can change what's inside the box whenever you want. So, a variable is like a container that holds information, and you can use that information in your calculations or programs.</p>
+
+    <br>
+    <h4>Explanation:</h4>
+    <p>A variable is a symbol or name that represents a value or a piece of information in mathematics, logic, programming, or other contexts where data is manipulated. It's essentially a placeholder that can hold different values, and those values can change over time or in different situations. In programming, variables are used to store and manipulate data, making it easier to work with information in a program.</p>
+
+    <br>
+    */ ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            4. How to declare a Variable?</h2>
+    
+
+    <h4>Variable</h4>
+
+    <p>vary + able = variable</p>
+    <p>Var is key word.</p>
+
+    <h4>To declare variable in JavaScript you need five things.</h4>
+    <h4>The var keyword was used in all JavaScript code from 1995 to 2015.</h4>
+    <h4>A variable is a value that can change, depending on conditions or on information passed to the program.</h4>
+
+    <h4>Variable</h4>
+
+    <p>1. var:  &nbsp;&nbsp;The var statement declares a variable.</p>
+    <p>2. Variable name:   &nbsp;&nbsp;Variables must be identified with unique names.</p>
+    <p>3. Assignment Operator " = ":   &nbsp;&nbsp;Use an " = " operator to assign a value.</p>
+    <p>4. Value:   &nbsp;&nbsp;Specifies the value to assign to the variable.</p>
+    <p>5. Semicolon (;):   &nbsp;&nbsp;You got to put semi-colon (;) .</p>
+
+    <br>
+    <h4>var price = 10;</h4>
+    <p>1. (var):   &nbsp;&nbsp;The var statement declares a variable.</p>
+    <p>2. (price) Variable name:   &nbsp;&nbsp;Variables must be identified with unique names.</p>
+    <p>3. (=) Assignment Operator " = ":  &nbsp;&nbsp;Use an " = " operator to assign a value.</p>
+    <p>4. (10) Value:   &nbsp;&nbsp;Specifies the value to assign to the variable.</p>
+    <p>5. (;) Semicolon (;):   &nbsp;&nbsp;You got to put semi-colon (;) .</p>
+
+    <br>
+    <h4>var age = 17;</h4>
+    <p>1. (var):   &nbsp;&nbsp;The var statement declares a variable.</p>
+    <p>2. (age) Variable name:   &nbsp;&nbsp;Variables must be identified with unique names.</p>
+    <p>3. (=) Assignment Operator " = ":   &nbsp;&nbsp;Use an " = " operator to assign a value.</p>
+    <p>4. (17) Value:   &nbsp;&nbsp;Specifies the value to assign to the variable.</p>
+    <p>5. (;) Semicolon (;):   &nbsp;&nbsp;You got to put semi-colon (;) .</p>
+
+
+    <br>
+    */ ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            5. Types of Variable? How can you find out type of a Variable?</h2>
+
+    <h2>Types of Variable</h2>
+
+    <br>
+    <h3>Numeric</h3>
+
+    <h5>var price = 10;</h5>
+    <h5>var age = 17;</h5>
+    <h5>var temperature = 20;</h5>
+
+    <br>
+    <h3>String</h3>
+
+    <h5>var person = "Hasan Ahmed" ;</h5>
+    <h5>var location = "Red Bridge London" ;</h5>
+    <h5>var special = "Delwar Hussain Saydi" ;</h5>
+    <h5>var job = 'Working on Web Development' ;</h5>
+
+    <br>
+    <h3>Boolean</h3>
+
+    <h5>var serious = true;</h5>
+    <h5>var isFullMarks = true;</h5>
+    <h5>var isMarried = false;</h5>
+
+    <br>
+    <h4>String data types</h4>
+    <p>Zero or more characters written inside quotes.</p>
+
+    <h4>Numeric data types</h4>
+    <p>Numbers can be written with or without decimals and without quotes.</p>
+
+    <h4>Boolean data type</h4>
+    <p>It can only take the values true or false and written without quotes.</p>
+
+
+    <br>
+    <h4>String</h4>
+    <p>A JavaScript string stores a series of characters like "John Doe". A string can be any text inside double or single quotes: let carName1 = "Volvo XC60"; let carName2 = 'Volvo XC60';</p>
+    
+    <h4>Numeric</h4>
+    <p>The JavaScript Number type is a double-precision 64-bit binary format IEEE 754 value, like double in Java or C#. This means it can represent fractional values, but there are some limits to the stored number's magnitude and precision.</p>
+    
+    <h4>Boolean</h4>
+    <p>In JavaScript, a boolean value is one that can either be TRUE or FALSE. If you need to know “yes” or “no” about something, then you would want to use the boolean function. It sounds extremely simple, but booleans are used all the time in JavaScript programming, and they are extremely useful.</p>
+
+    <br>
+    <h3>JavaScript keyword, variable name, naming convention</h3>
+
+    <p>1. Variable name can not be any keywords.</p>
+    <p>2. Variable name has to be in one word, no space.</p>
+    <p>3. Variable name can not have question.</p>
+    <p>4. Variable name can not starts with a number but can ends with a number.</p>
+    <p>5. How to use long names in Variable.</p>
+
+    <br>
+    <h2>Good Variable</h2>
+
+    <h5>var price = 40;</h5>
+
+    <br>
+    <h3>You can not do this on JavaScript.</h3>
+    <h5>vaR price = 40;</h5>
+    <h5>Var price = 40;</h5>
+    <h5>VAR price = 40</h5>
+
+    <h3>1. Variable name can not be any keywords.</h3>
+    <h5>var false = 95;</h5>
+    <h5>var return = true;</h5>
+
+    <h3>2. Variable name has to be in one word. No space.</h3>
+    <h5>var my home address = "London Ilford"</h5>
+
+    <h3>3. Variable name can not have quotation.</h3>
+    <h5>var "name" = "Tom Hanks";</5>
+
+    <h3>4. Variable name can not start with a number but can ends with a number.</h3>
+    <h5>var 95club = 1995;</h5>
+    <h5>var club25 = 2025;  // you can do this .</h5>
+
+    <h3>5. How to use long names.</h3>
+    <h5>var user-name = "Salman Shah"; //Can not use dash.</h5>
+    <h5>var user home address = "Redbridge Essex London";</h5>
+    <h5>var userhomeaddress = "Redbridge Essex London";</h5>
+    <h5>var user_home_address = "Redbridge Essex London"; //Snake Case</h5>
+    <h5>var userHomeAddress = "Redbridge Essex London"; //Camel Case</h5>
+    <h5>var UserHomeAddress = "Redbridge Essex London"; //Pascal Case</h5>
+
+    <h3>We will use Camel Case.</h3>
+
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    
+    <h2>                            6. Primitive and Non-Primitive data types? </h2>
+
+
+    <h3>JavaScript Data Types</h3>
+
+    <h3>Primitive Data Type and Non Primitive Data Type</h3>
+
+    <h3>Primitive Data Type:</h3>
+    <h4>Number</h4>
+    <h4>String</h4>
+    <h4>Boolean</h4>
+    <h4>Undefined</h4>
+    <h4>Null</h4>
+
+    <h3>Non Primitive Data Type:</h3>
+    <h4>Object</h4>
+    <h4>Array</h4>
+    <h4>Function</h4>
+
+    
+    <br>
+    <h5>var price = 100;</h5>
+    <h5>console.log(price);</h5>
+    <h5>/* Output:</h5>
+    <h5>100 */</h5>
+
+    <h5>console.log(typeof price);</h5>
+    <h5>/* Output:</h5>
+    <h5>number */</h5>
+
+    <br>
+    <h5>var price = '100';</h5>
+    <h5>console.log(typeof price);</h5>
+    <h5>/* Output:</h5>
+    <h5>string */</h5>
+
+    <br>
+    <h5>var isHappy = true;</h5>
+    <h5>console.log(typeof isHappy);</h5>
+    <h5>/* Output:</h5>
+    <h5>boolean */</h5>
+
+    <br>
+    <h5>var romantic;</h5>
+    <h5>console.log(typeof romantic);</h5>
+    <h5>/* Output:</h5>
+    <h5>undefined */</h5>
+
+    <br>
+    <h3>                          Advanced  </h3>
+
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.30000000000000004 */</h5>
+
+    <br>
+    <h5>var num1 = 0.5;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.7 */</h5>
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.3;</h5>
+    <h5>var sum = num1 + num2</h5>;
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.4 */</h5>
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.30000000000000004 */</h5>
+    
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(2);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.30 */</h5>
+    
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(4);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3000 */</h5>
+    
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(1);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3 (String)*/</h5>
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(1);</h5>
+    <h5>sum = parseFloat(sum);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3 (Number)*/</h5>
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            7. Naming Convention of JavaScript Variables? </h2>
+
+
+    <h3>number type variable </h3>
+    <h5>var sunglassPrice = 120;</h5>
+    
+    <h3>string type variable</h3>
+    <h5>var specialOneName = 'Jhose Morihioho';</h5>
+    
+    <h3>boolean type variable</h3>
+    <h5>var isSingle = true;</h5>
+    
+    <h3>two types of number:</h3>
+    
+    <h4> Integer: 120,</h4>
+    <h4>float, decimal: 3.65</h4>
+    
+    <h3>variable naming convention: rules, best practice</h3>
+    
+    <h5>1. single word</h5>
+    <h5>2. no gap or space</h5>
+    <h5>3. no quote</h5>
+    <h5>4. no keyword</h5>
+    <h5>5. can not star with a number</h5>
+    <h5>6. can not contain dash</h5>
+    <h5>7. should use camelCase</h5>
+    
+    
+    <h3>Math Operations: +, -, *, /</h3>
+    <h4>Shorthand: +=, -=, ++, --</h4>
+    
+    <h3>Convert: parseInt, parseFloat</h3>
+    
+    <h3>toFixed</h3>
+    
+    <h3>remainder(vagshesh): %</h3>
+
+
+
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    <h2>                            8. Math Operation: +, -, *, /, % ?</h2> 
+    
+    <h3>Arithmetic operators</h3>
+
+    <h3>Arithmetic operators are used for performing mathematical calculations in JavaScript:</h3>
+
+    <h4>Operator: +</h4>
+    <h4>Name: Addition</h4>
+    <h4>Purpose: Adds two numbers together.</h4>
+    <h4>Example:6 + 9</h4> 
+    
+    <br>
+    <h4>Operator: -</h4>
+    <h4>Name: Subtraction</h4>
+    <h4>Purpose: Subtracts the right number from the left.</h4>
+    <h4>Example: 20 - 15</h4>
+
+    <br>
+    <h4>Operator: *</h4>
+    <h4>Name: Multiplication</h4>
+    <h4>Purpose: Multiplies two numbers together.</h4>
+    <h4>Example: 3 * 7</h4>
+
+    <br>
+    <h4>Operator: /</h4>
+    <h4>Name: Division</h4>
+    <h4>Purpose: Divides the left number by the right.</h4>
+    <h4>Example: 10 / 5</h4>
+
+    <br>
+    <h4>Operator: %</h4>
+    <h4>Name: Remainder (sometimes called modulo)</h4>
+    <h4>Purpose: Returns the remainder left over after you've divided the left number into a number of integer portions equal to the right number.</h4>
+    <h4>Example: 8 % 3 (returns 2, as three goes into 8 twice, leaving 2 left over)</h4>
+
+    <br>
+    <h4>Operator: **</h4>
+    <h4>Name: Exponent</h4>
+    <h4>Purpose: Raises a base number to the exponent power, that is, the base number multiplied by itself, exponent times.</h4>
+    <h4>Example: 5 ** 2 (returns 25, which is the same as 5 * 5).</h4>
+
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            9. Shorthand: +=, -=, *=, /= ? </h2>
+
+    <h3>Add some value to the existing value</h3>
+    <h5>price1 = price1 + 10;</h5>
+    <h5>console.log(price1);</h5>
+    <h5>/* Output:</h5>
+    <h5>41 */</h5>
+
+    <h3>Addition to the same variable shorthand</h3>
+    <h3>+= Means adding some value to the existing value</h3>
+    <h5>price1 += 10;</h5>
+    <h5>console.log(price1);</h5>
+    <h5>/* Output:</h5>
+    <h5>51 */</h5>
+
+    <h5>price2 = price2 - 5;</h5>
+    <h3>Shorthand -=</h3>
+
+    <h3>-= Means deducting some values from current value of the variable</h3>
+    <h5>price2 -= 5;</h5>
+
+    <h3>*=</h3>
+    <h5>price1 *= 5;</h5>
+    <h5>console.log(price1);</h5>
+    <h5>/* Output:</h5>
+    <h5>255 */</h5>
+
+    <h3>/=</h3>
+    <h5>price1 /= 5;</h5>
+    <h5>console.log(price1);</h5>
+    <h5>/* Output:</h5>
+    <h5>51 */</h5>
+
+    <br>
+    <h5>var age = 15;</h5>
+    <h5>age = age +1;</h5>
+    <h3> ++ Means adding 1 to the existing value</h3>
+    <h5>age ++;</h5>
+    
+    <br>
+    <h5>var profit = 100;</h5>
+    <h5>profit = profit - 1;</h5>
+    <h3>-- Means you are deducting 1 from the existing value </h3>
+    <h5>profit --;</h5>
+
+    <br>
+    <h3>How to write shorthand mathematical operations?</h3>
+
+    <h4>Full Form</h4>
+    <h5>var price1 = price1 + 10;</h5>
+    <h5>var price1 = price1 - 10;</h5>
+    <h5>var price1 = price1 * 10;</h5>
+    <h5>var price1 = price1 / 10;</h5>
+
+    <h4>Shorthand</h4>
+    <h5>var price1 += 10;</h5>
+    <h5>var price1 -= 10;</h5>
+    <h5>var price1 *= 10;</h5>
+    <h5>var price1 /= 10;</h5>
+    
+
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            10. Shorthand: ++, -- ? </h2>
+
+    <h3>In JavaScript, ++ and -- are unary operators used for incrementing and decrementing variables by 1, respectively.</h3>
+
+    <h3>++ is the increment operator, and it adds 1 to the value of a variable. It can be used in two ways:</h3>
+
+    <h3>1. Prefix increment: ++variable increases the value of the variable by 1 and then returns the updated value.</h3>
+    <h3>2. Postfix increment: variable++ returns the current value of the variable and then increases it by 1.</h3>
+    <h3>For example:</h3>
+    <h5>var price = 5;</h5>
+    <h5>console.log(++ price); // Outputs: 6</h5>
+    <h5>console.log(price ++); // Outputs: 6</h5>
+    <h5>console.log(price);   // Outputs: 7</h5>
+
+
+    <h3>-- is the decrement operator, and it subtracts 1 from the value of a variable. Similar to ++, it can be used in both prefix and postfix forms.</h3>
+    <h3>For example: </h3>
+    <h5>var price = 10;</h5>
+    <h5>console.log(--price); // Outputs: 9</h5>
+    <h5>console.log(price--); // Outputs: 9</h5>
+    <h5>console.log(price);   // Outputs: 8</h5>
+
+    <h3>It's important to note that when used in more complex expressions, the position of ++ or -- (prefix or postfix) can affect the behavior of the expression due to differences in when the increment or decrement occurs in relation to the evaluation of the expression.</h3>
+
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                             11. Purpose of parseInt and parseFloat? </h2>
+
+    <h2>ParseInt and ParseFloat</h2>
+    <p>parseInt() and parseFloat() are functions in JavaScript used for converting strings to numbers.</p>
+
+    <h2>ParseInt</h2>
+    <p>This function takes a string as input and parses it to an integer. It stops parsing when it encounters a character that is not a valid part of a number. It also allows you to specify the base of the numeral system (e.g., binary, octal, decimal, hexadecimal). If no base is provided, it assumes base 10.</p>
+
+    <h2>ParseFloat</h2>
+    <p>This function parses a string argument and returns a floating point number. Unlike parseInt(), it parses the string until it encounters a character that is not a valid part of a floating-point number, such as a letter or a symbol other than period (.) or exponent notation (e or E).These functions are commonly used when dealing with user input, where data may be entered as strings and need to be converted to numbers for mathematical operations or other processing.</p>
+
+    <br>
+    <h5>var gpa = '3.41';</h5>
+    <h5>var gpaNumber = parseInt(gpa);</h5>
+    <h5>console.log(gpaNumber);</h5>
+    <h5>/* Output:</h5>
+    <h5>3 (Number) */</h5>
+
+    <br>
+    <h5>var gpa = '3.41';</h5>
+    <h5>var gpaNumber = parseFloat(gpa);</h5>
+    <h5>console.log(gpaNumber);</h5>
+    <h5>/* Output:</h5>
+    <h5>3.41 (Number) */</h5>
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            12. Purpose of toFixed?</h2> 
+
+
+    <h3>Purpose of toFixed:</h3>
+    <p>The toFixed() method in JavaScript is used to format a number with a fixed number of digits after the decimal point. It converts a number into a string, rounding the number to the specified number of decimal places and padding it with zeros if necessary to meet that length.</p>
+    <p>It's important to note that toFixed() returns a string representation of the number, not a number itself. Also, be cautious when using it with large numbers, as it may not provide accurate results due to floating-point precision issues.</p>
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.30000000000000004 */</h5>
+    
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(2);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.30 */</h5>
+    
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(4);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3000 */</h5>
+
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(1);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3 (String)*/</h5>
+
+
+    <br>
+    <h5>var num1 = 0.1;</h5>
+    <h5>var num2 = 0.2;</h5>
+    <h5>var sum = num1 + num2;</h5>
+    <h5>sum = sum.toFixed(1);</h5>
+    <h5>sum = parseFloat(sum);</h5>
+    <h5>console.log(sum);</h5>
+    <h5>/* Output:</h5>
+    <h5>0.3 (Number)*/</h5>
+
+
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    <h2>                            Array </h2>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            1. What is the purpose of an Array?</h2>
+
+    <p>In JavaScript, an array is one of the most commonly used data types. It stores multiple values and elements in one variable. These values can be of any data type — meaning you can store a string, number, boolean, and other data types in one variable.</p>
+
+
+    <p>In JavaScript, an array serves the same fundamental purpose as in other programming languages: it's a data structure used to store a collection of elements. JavaScript arrays can hold elements of any data type, and they provide methods for adding, removing, and accessing elements.</p>
+
+    <p>Arrays in JavaScript are dynamic, meaning their size can change dynamically as elements are added or removed. This flexibility makes them widely used for various tasks such as storing lists of items, managing data collections, and implementing algorithms and data structures like stacks and queues.</p>
+
+    <p>JavaScript arrays also come with built-in methods for common operations like iterating over elements, searching for elements, and sorting. Additionally, arrays can be nested within each other, allowing for the creation of multidimensional arrays to represent more complex data structures. Overall, arrays in JavaScript are versatile and essential for many programming tasks.</p>
+
+    <br>
+    <h3>Creating an array to store a list of fruits</h3>
+    <h5>var fruits = ['apple', 'banana', 'orange', 'kiwi'];</h5>
+
+    <h3>Accessing elements in the array</h3>
+    <h5>console.log(fruits[0]);</h5> 
+    <h5>/* Output:</h5> 
+    <h5>apple */</h5>
+    <h5>console.log(fruits[2]);</h5> 
+    <h5>/* Output:</h5> 
+    <h5>orange */</h5>
+
+    <h3>Modifying elements in the array</h3>
+    <h5>fruits[1] = 'grape'; // Changing 'banana' to 'grape'</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'apple', 'grape', 'orange', 'kiwi' ] */</h5>
+
+    <h3>Adding elements to the array</h3>
+    <h5>fruits.push('pineapple'); // Adding 'pineapple' to the end</h5>
+    <h5>console.log(fruits);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 'apple', 'grape', 'orange', 'kiwi', 'pineapple' ] */</h5>
+
+    <h3>Removing elements from the array</h3>
+    <h5>var removedFruit = fruits.pop(); // Removing the last element ('pineapple')</h5>
+    <h5>console.log(removedFruit);</h5> 
+    <h5>/* Output:</h5>
+    <h5>pineapple */</h5>
+    <h5>console.log(fruits);</h5> 
+    <h5>/* Output:</h5> 
+    <h5>['apple', 'grape', 'orange', 'kiwi'] */</h5>
+
+    <h3>Iterating over the elements of the array</h3>
+    <h5>for (var i = 0; i < fruits.length; i++) {</h5>
+    <h5>console.log(fruits[i]);</h5>
+    <h5>}</h5>
+    <h5>/* Output:</h5>
+    <h5>apple</h5>
+    <h5>grape</h5>
+    <h5>orange</h5>
+    <h5>kiwi */</h5>
+
+
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    
+    <h2>                            2. How to declare an Array in JavaScript?</h2>
+
+    <h3>Array</h3>
+    <p>To declare an array with literal notation you just define a new array using empty brackets. It looks like this: var numbers =[1, 2, 3, 4, 5]; You will place all elements within the square brackets and separate each item or element with a comma.</p>
+    
+    
+    <br>
+    <h3>Array Structure</h3>
+    <h4>Array</h4>
+    <h4>(A B C D)-Element</h4>
+    <h4>(0 1 2 3)-Index</h4>
+
+    <h5>Array Length=4</h5>
+    <h5>First Index=0</h5>
+    <h5>Last Index=3</h5>
+
+    <br>
+    <h2>It is wise to use arrays with similar data types.</h2>
+
+    <h3>[2, a, 5, b, white]; You don't do this</h3>
+    <h3>Integer array [1, 3, 7, 8, 10];</h3>
+    <h3>Char array ['d', 'f', 'r', 't', 't'];</h3>
+    <h3>String array ['Bob', 'Rob', 'Jane', 'Peter'];</h3>
+
+
+</body>
+</html>
