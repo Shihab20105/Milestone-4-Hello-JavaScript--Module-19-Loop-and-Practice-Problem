@@ -689,5 +689,72 @@
     <h3>String array ['Bob', 'Rob', 'Jane', 'Peter'];</h3>
 
 
+    <br>
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+
+    <h2>                            3. Number of elements in an Array?</h2> 
+
+    <p>The number of elements in an array in JavaScript can vary depending on how you define and populate the array. It could be any non-negative integer value. If you have an array (numbers) with 5 elements.</p>
+
+    <h5>var numbers = [45, 68, 78, 56, 89, 98];</h5>
+    <p>The number of elements in this array is 6. You can retrieve the number of elements using the (length) property.</p>
+    <h5>console.log(numbers.length);</h5>
+    <h5>/* Output:</h5> 
+    <h5>6 */</h5>
+    <h5>console.log("Number of elements in the array:",numbers.length);</h5>
+    <h5>/* Output:</h5>
+    <h5>Number of elements in the array: 6 */</h5>
+
+    <p>So, the number of elements in an array in JavaScript depends on the specific array you are working with.</p>
+
+
+    <br>
+    <h5>var numbers = [45, 68, 78, 56, 89, 98];</h5>
+
+    <h3>Index ( [45, 68, 78, 56, 89, 98]; )</h3>
+    <h3>         0    1   2   3   4   5</h3>
+
+
+    <br>
+    <h3>1. Get element value by index:</h3>
+    <h5>console.log(numbers);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 45, 68, 78, 56, 89, 98 ] */</h5>
+    <h5>console.log(numbers[0]);</h5>
+    <h5>/* Output:</h5>
+    <h5>45 */</h5>
+    <h5>console.log(numbers[3]);</h5>
+    <h5>/* Output:</h5>
+    <h5>56 */</h5>
+    <h5>console.log(numbers[2]);</h5>
+    <h5>/* Output:</h5>
+    <h5>78 */</h5>
+
+    <br>
+    <h5>var elements = numbers[1];</h5>
+    <h5>console.log(elements);</h5>
+    <h5>/* Output:</h5>
+    <h5>68 */</h5>
+
+    <br>
+    <h3>2. Set element value by index:</h3>
+    <h5>numbers[1] = 77;</h5>
+    <h5>numbers[3] = 44;</h5>
+    <h5>console.log(numbers);</h5>
+    <h5>/* Output:</h5>
+    <h5>[ 45, 77, 78, 44, 89, 98 ] */</h5>
+
+    <br>
+    <h3>Find index of an element:</h3>
+    <h5>var positionIndex = numbers.indexOf(89);</h5>
+    <h5>console.log(positionIndex);</h5>
+    <h5>/* Output:</h5>
+    <h5>4 */</h5>
+    <h5>var positionIndex = numbers.indexOf(188);</h5>
+    <h5>console.log(positionIndex);</h5>
+    <h5>/* Output:</h5>
+    <h5>-1 */</h5>
+
+
 </body>
 </html>

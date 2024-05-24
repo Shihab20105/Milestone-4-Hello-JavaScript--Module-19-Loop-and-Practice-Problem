@@ -111,3 +111,64 @@ Last Index=3 */
 /* Integer array */ [1, 3, 7, 8, 10];
 /* Char array */ ['d', 'f', 'r', 't', 't'];
 /* String array */ ['Bob', 'Rob', 'Jane', 'Peter'];
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          3. Number of elements in an Array? 
+
+The number of elements in an array in JavaScript can vary depending on how you define and populate the array. It could be any non-negative integer value. If you have an array (numbers) with 5 elements: */
+
+var numbers = [45, 68, 78, 56, 89, 98];
+/*The number of elements in this array is 6. You can retrieve the number of elements using the (length) property: */
+console.log(numbers.length);
+/* Output: 
+6 */
+console.log("Number of elements in the array:",numbers.length);
+/* Output:
+Number of elements in the array: 6 */
+
+/* So, the number of elements in an array in JavaScript depends on the specific array you are working with. */
+
+
+var numbers = [45, 68, 78, 56, 89, 98];
+
+/* Index ( [45, 68, 78, 56, 89, 98]; )
+            0    1   2   3   4   5 */
+
+
+/* 1. Get element value by index: */
+console.log(numbers);
+/* Output:
+[ 45, 68, 78, 56, 89, 98 ] */
+console.log(numbers[0]);
+/* Output:
+45 */
+console.log(numbers[3]);
+/* Output:
+56 */
+console.log(numbers[2]);
+/* Output:
+78 */
+
+var elements = numbers[1];
+console.log(elements);
+/* Output:
+68 */
+
+/* 2. Set element value by index: */
+numbers[1] = 77;
+numbers[3] = 44;
+console.log(numbers);
+/* Output:
+[ 45, 77, 78, 44, 89, 98 ] */
+
+/* 3. Find index of an element: */
+var positionIndex = numbers.indexOf(89);
+console.log(positionIndex);
+/* Output:
+4 */
+var positionIndex = numbers.indexOf(188);
+console.log(positionIndex);
+/* Output:
+-1 */
