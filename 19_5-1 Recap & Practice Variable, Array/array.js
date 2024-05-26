@@ -131,13 +131,18 @@ Number of elements in the array: 6 */
 /* So, the number of elements in an array in JavaScript depends on the specific array you are working with. */
 
 
-var numbers = [45, 68, 78, 56, 89, 98];
-
-/* Index ( [45, 68, 78, 56, 89, 98]; )
-            0    1   2   3   4   5 */
+/* Array Structure:
+Array: ( [45, 68, 78, 56, 89, 98]; )
+Index:     0    1   2   3   4   5 
+Elements: 45, 68, 78, 56, 89, 98
+Array Length: 6
+First Index: 0
+Last Index: 5
+*/
 
 
 /* 1. Get element value by index: */
+var numbers = [45, 68, 78, 56, 89, 98];
 console.log(numbers);
 /* Output:
 [ 45, 68, 78, 56, 89, 98 ] */
@@ -172,3 +177,40 @@ var positionIndex = numbers.indexOf(188);
 console.log(positionIndex);
 /* Output:
 -1 */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/*                          4. What is Index in JavaScript? 
+
+
+In JavaScript, an index typically refers to the position of an element within an array or a string.
+
+For arrays, the index represents the numeric position of an element within the array, starting from 0 for the first element, 1 for the second element, and so on. For example: */
+var fruits = ['apple', 'banana', 'orange'];
+console.log(fruits[0]);
+/* Output:
+ apple */
+console.log(fruits[1]);
+/* Output: 
+banana */
+console.log(fruits[2]);
+/* Output: 
+orange */
+
+/* For strings, the index represents the position of a character within the string, again starting from 0. For example: */
+var str = 'hello';
+console.log(str[0]);
+/* Output: 
+h */
+console.log(str[1]);
+/* Output: 
+e */
+console.log(str[2]);
+/* Output: 
+l */
+
+/* Array: ( [45, 68, 78, 56, 89, 98]; )
+Index:     0    1   2   3   4   5 
+First Index: 0
+Last Index: 5
+ */
