@@ -214,3 +214,176 @@ Index:     0    1   2   3   4   5
 First Index: 0
 Last Index: 5
  */
+
+/* Get element value by index: */
+var numbers = [45, 68, 78, 56, 89, 98];
+console.log(numbers);
+/* Output:
+[ 45, 68, 78, 56, 89, 98 ] */
+console.log(numbers[0]);
+/* Output:
+45 */
+console.log(numbers[3]);
+/* Output:
+56 */
+console.log(numbers[2]);
+/* Output:
+78 */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          5. Find the value of an element by Index?
+
+
+/* Get element value by index: */
+var numbers = [45, 68, 78, 56, 89, 98];
+console.log(numbers);
+/* Output:
+[ 45, 68, 78, 56, 89, 98 ] */
+console.log(numbers[0]);
+/* Output:
+45 */
+console.log(numbers[3]);
+/* Output:
+56 */
+console.log(numbers[2]);
+/* Output:
+78 */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          6. Change or Update or Set an element by index? */ 
+
+
+/* Set element value by index: */
+var numbers = [45, 68, 78, 56, 89, 98];
+numbers[1] = 77;
+numbers[3] = 44;
+console.log(numbers);
+/* Output:
+[ 45, 77, 78, 44, 89, 98 ] */
+
+/* Find index of an element: */
+var positionIndex = numbers.indexOf(89);
+console.log(positionIndex);
+/* Output:
+4 */
+var positionIndex = numbers.indexOf(188);
+console.log(positionIndex);
+/* Output:
+-1 */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          7. Get the index of an element by the value? */ 
+
+
+/* Find index of an element: */
+var numbers = [45, 68, 78, 56, 89, 98];
+var positionIndex = numbers.indexOf(89);
+console.log(positionIndex);
+/* Output:
+4 */
+var positionIndex = numbers.indexOf(188);
+console.log(positionIndex);
+/* Output:
+-1 */
+
+/* In the first case, the indexOf() method returns 4 because 89 is found at index 4 in the numbers array. In the second case, the indexOf() method returns -1 because 188 is not present in the numbers array. So, -1 indicates that the value was not found in the array. */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          8. What does it mean when you get undefined while getting the value of an element by index? 
+
+In JavaScript, when you try to access an element of an array using an index that is out of bounds or does not exist, you will get undefined as the result. This indicates that the element at that index is not defined or does not exist in the array.
+
+For example: */
+let numbers = [10, 20, 30, 40, 50];
+console.log(numbers[10]);
+/* Output: 
+undefined */
+/* Here, numbers array has elements at indices 0 through 4. Accessing numbers[10] tries to access an element beyond the bounds of the array, resulting in undefined. */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          9. How can you add an element to an array at the last position? 
+
+
+You can add an element to the end of an array in JavaScript using the push() method. Here's an example: */
+var numbers = [1, 2, 3, 4];
+numbers.push(5);
+console.log(numbers);
+/* Output: 
+[1, 2, 3, 4, 5] */
+
+/* In this example, push(5) adds the element 5 to the end of the numbers array.
+
+Another way to add an element to the end of an array is by using the array's length property. Here's an example: */
+var numbers = [1, 2, 3, 4];
+numbers[numbers.length] = 5;
+console.log(numbers);
+/* Output: 
+[1, 2, 3, 4, 5] */
+
+/* In this example, numbers.length returns the current length of the array (which is 4), so numbers[numbers.length] = 5 adds the element 5 at index 4, effectively adding it to the end of the array. */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          10. How can you remove the last element from array? 
+
+
+You can remove the last element from an array in JavaScript using the pop() method. Here's an example: */
+var numbers = [1, 2, 3, 4, 5];
+var removedElement = numbers.pop();
+console.log(numbers);
+/* Output: 
+[1, 2, 3, 4] */
+console.log("Removed Element:", removedElement);
+/* Output: 
+Removed Element: 5 */
+
+/* In this example, pop() removes the last element (5) from the numbers array and returns it. After the operation, the array becomes [1, 2, 3, 4], and the removed element is stored in the removedElement variable. 
+
+
+Alternatively, you can also use the length property to remove the last element by setting the length of the array to one less than its current length. Here's an example:*/
+var numbers = [1, 2, 3, 4, 5];
+numbers.length = numbers.length - 1;
+console.log(numbers);
+/* Output: 
+[1, 2, 3, 4] */
+
+/* In this example, setting numbers.length to numbers.length - 1 effectively removes the last element (5) from the numbers array. */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          11. Add an element at the first position of an array? 
+
+/* The unshift() method adds new elements to the beginning of an array.
+The unshift() method overwrites the original array. */
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+/* Output: 
+[ 'Banana', 'Orange', 'Apple', 'Mango' ] */
+fruits.unshift("Lemon","Pineapple");
+console.log(fruits);
+/* Output: 
+[ 'Lemon', 'Pineapple', 'Banana', 'Orange', 'Apple', 'Mango' ] */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/*                          12. Remove the first element of an array? */
+
+/* Shift (remove) the first element of the array: */
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+console.log(fruits);
+/* Output: 
+[ 'Orange', 'Apple', 'Mango' ] */

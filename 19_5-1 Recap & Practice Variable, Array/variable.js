@@ -557,3 +557,5 @@ sum = parseFloat(sum);
 console.log(sum);
 /* Output:
 0.3 (Number)*/
+
+
