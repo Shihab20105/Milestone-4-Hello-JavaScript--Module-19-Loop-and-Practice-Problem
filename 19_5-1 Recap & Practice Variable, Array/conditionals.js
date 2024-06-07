@@ -114,3 +114,37 @@ then i will have toast biscuit */
 then i will have butter bread */
 /* Output:
 then i will have butter croissant */
+
+
+
+/* Let's say you have x amount of money.
+If you have more than 80,000 then you will buy a Mack book
+If you have more than 60,000 then you will buy a HP laptop
+If you have more than 40,000 then you will buy a Acer laptop
+If you have more than 20,000 then you will buy an used laptop
+Otherwise, you will use your mobile phone */
+var amountOfMyMoney = 10000;
+var mackBookPrice = 80000;
+var hpLaptopPrice = 60000;
+var acerLaptopPrice = 40000;
+var usedLaptopPrice = 20000;
+
+if (amountOfMyMoney > mackBookPrice) {
+  console.log('then I will buy a Mack book');
+}
+else if (amountOfMyMoney > hpLaptopPrice) {
+  console.log('then I will buy a HP laptop');
+}
+else if (amountOfMyMoney > acerLaptopPrice) {
+  console.log('then I will buy an Acer laptop');
+}
+else if (amountOfMyMoney > usedLaptopPrice) {
+  console.log('then I will buy an used laptop');
+}
+else {
+  console.log('Otherwise, I will use my mobile phone');
+}
+
+
+/* Output:
+Otherwise, I will use my mobile phone */
