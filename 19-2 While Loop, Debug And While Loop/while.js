@@ -1,24 +1,42 @@
-// roastGiven = roastGiven = 1;
-// roastGiven += 1;
+/*                          While Loop, Debug And Understand While Loop 
+
+
+* roastGiven = roastGiven + 1;
+* roastGiven += 1; */
+
 
 roastGiven = 0;
 while(roastGiven < 7){
-    console.log('Give The Roast, Please !!' )
+    console.log('Give The Roast, Please !!' );
+    roastGiven++;
+}
+/* Output:
+Give The Roast, Please !!
+Give The Roast, Please !!
+Give The Roast, Please !!
+Give The Roast, Please !!
+Give The Roast, Please !!
+Give The Roast, Please !!
+Give The Roast, Please !! */
+
+roastGiven = 0;
+while(roastGiven < 7){
+    console.log('Give The Roast, Please !!' );
     console.log(roastGiven);
     roastGiven++;
 }
-
-// Output:Give The Roast, Please !!
-// 0
-// Give The Roast, Please !!
-// 1
-// Give The Roast, Please !!
-// 2
-// Give The Roast, Please !!
-// 3
-// Give The Roast, Please !!
-// 4
-// Give The Roast, Please !!
-// 5
-// Give The Roast, Please !!
-// 6
+/* Output:
+Give The Roast, Please !!
+0
+Give The Roast, Please !!
+1
+Give The Roast, Please !!
+2
+Give The Roast, Please !!
+3
+Give The Roast, Please !!
+4
+Give The Roast, Please !!
+5
+Give The Roast, Please !!
+6 */
